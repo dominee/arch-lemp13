@@ -32,9 +32,9 @@ echo "[ ] Creating partition layout"
 # sgdisk -a1 -n1:2048:1128447 -t1:EF00 -N2  /dev/nvme0n1
 
 # version for keeping Original EFI and Pop!_OS /recovery partition
-sgdisk -d 1 /dev/nvme0n1p4 # Delete Old Swap
-sgdisk -d 1 /dev/nvme0n1p3 # Delete Old LVM root
-sgdisk -a1 -N2 /dev/nvme0n1 # New part for crypt root filling the freed space
+sgdisk -d 4 /dev/nvme0n1 # Delete Old Swap
+sgdisk -d 3 /dev/nvme0n1 # Delete Old LVM root
+sgdisk -a1 -N3 /dev/nvme0n1 # New part for crypt root filling the freed space
 sgdisk -p /dev/nvme0n1
 
 # If you do not keep /restore crypt root will be on /dev/nvme0n1p2
