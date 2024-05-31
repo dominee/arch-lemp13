@@ -96,7 +96,7 @@ mount /dev/nvme0n1p1 /mnt/boot
 # Update and base install
 echo "[+] Installing..."
 pacman -Syy
-pacstrap /mnt linux linux-headers linux-lts linux-lts-headers base neovim intel-ucode btrfs-progs efibootmgr zsh
+pacstrap /mnt linux linux-headers linux-lts linux-lts-headers linux-firmware base neovim intel-ucode btrfs-progs efibootmgr zsh
 
 # Generate `/etc/fstab`:
 echo "[ ] Generating /etc/fstab"
