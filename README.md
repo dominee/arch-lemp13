@@ -2,7 +2,7 @@
 
 My Arch linux setup on [System76 Lemur Pro](https://system76.com/laptops/lemur) (lemp13).
 
-The goal is to have FDE via LUKS, Secureboot, BTRFS with snapshots, EFI via systemd-boot, zram, Wayland with Sway and Waybar.
+The goal is to have FDE via LUKS, Secureboot, BTRFS with snapshots, EFI via systemd-boot, zram, Wayland with Hyprland and Waybar.
 
 ## Basic installation
 
