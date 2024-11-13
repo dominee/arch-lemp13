@@ -40,7 +40,7 @@ mkdir -p /home/${MY_USER}/volumes/{usb1,usb2,backups}
 mkdir -p ~/.config
 
 # zsh goodies
-yay -Sy ttf-meslo-nerd-font-powerlevel10k oh-my-zsh zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
+yay -Sy ttf-meslo-nerd-font-powerlevel10k oh-my-zsh-git zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
 sudo ln -s /usr/share/zsh/plugins/zsh-syntax-highlighting /usr/share/oh-my-zsh/custom/plugins
 sudo ln -s /usr/share/zsh/plugins/zsh-autocomplete /usr/share/oh-my-zsh/custom/plugins
 sudo ln -s /usr/share/zsh/plugins/zsh-autosuggestions /usr/share/oh-my-zsh/custom/plugins
