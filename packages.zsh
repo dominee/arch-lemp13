@@ -32,6 +32,7 @@ pacman -S --noconfirm \
     intel-gpu-tools \
     intel-media-driver \
     openssh \
+    neofetch \
     snapper \
     power-profiles-daemon \
     zram-generator \
