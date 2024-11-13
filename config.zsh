@@ -82,7 +82,6 @@ echo "${MY_USER} ALL=(ALL) ALL" >> /etc/sudoers.d/"${MY_USER}"
 
 echo "[ ] Configuring resolver"
 # Link resolv.conf (needed for importing keys with gpg)
-rm /etc/resolv.conf
-ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-
+rm /mnt/etc/resolv.conf
+ln -s /run/systemd/resolve/stub-resolv.conf /mnt/etc/resolv.conf
 
