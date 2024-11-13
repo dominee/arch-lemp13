@@ -27,6 +27,8 @@ yay -S --noconfirm \
   ncmpcpp \
   less \
   jq \
+  yubikey-manager \
+  libfido2 \
   keychain
 
 
