@@ -29,7 +29,9 @@ yay -S --noconfirm \
   jq \
   yubikey-manager \
   libfido2 \
-  keychain
+  keychain \
+  mc \
+  nmap
 
 
 echo "[ ] Changing shell to zsh"
