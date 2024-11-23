@@ -31,7 +31,13 @@ yay -S --noconfirm \
   libfido2 \
   keychain \
   mc \
-  nmap
+  nmap \
+  firefox \
+  betterbird-bin \
+  1password \
+  gvfs \
+  gvfs-smb \
+  unzip
 
 
 echo "[ ] Changing shell to zsh"
@@ -48,6 +54,14 @@ yay -Sy ttf-meslo-nerd-font-powerlevel10k oh-my-zsh-git zsh-theme-powerlevel10k 
 sudo ln -s /usr/share/zsh/plugins/zsh-syntax-highlighting /usr/share/oh-my-zsh/custom/plugins
 sudo ln -s /usr/share/zsh/plugins/zsh-autocomplete /usr/share/oh-my-zsh/custom/plugins
 sudo ln -s /usr/share/zsh/plugins/zsh-autosuggestions /usr/share/oh-my-zsh/custom/plugins
+
+# Audio / mpd / ncmpcpp
+sudo systemctl disable --now mpd
+mkdir -p /home/${MY_USER}/.mpd/playlists
+touch /home/${MY_USER}/{state,database,sticker.sql}
+mkdir -p /home/${MY_USER}/.ncmpcpp/lyrics
+mkfifo /tmp/mpd.fifo
+sudo systemctl --user enable --now mpd
 
 # TODO: Set dotfiles
 
