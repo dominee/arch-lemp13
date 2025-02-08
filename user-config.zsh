@@ -16,6 +16,10 @@ cd yay-bin
 makepkg -si
 cd .. && rm -rf yay-bin
 
+echo "[ ] Installing additional user packages"
+# Install additional packages
+sudo pacman -S obsidian lsd bind
+
 echo "[ ] Installing AUR packages"
 # Install AUR packages
 yay -S --noconfirm \
